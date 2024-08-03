@@ -24,9 +24,9 @@ section {
   padding: 100px 0;
 }
 
-/* header section start */
+/* .main-header section start */
 
-header {
+.main-header {
   position: fixed;
   top: 0px;
   left: 0;
@@ -36,7 +36,7 @@ header {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-header.nav-fix {
+.main-header.nav-fix {
   position: fixed;
   top: 0px;
   left: 0;
@@ -47,7 +47,7 @@ header.nav-fix {
   transition: 0.7s;
 }
 
-header .navbar {
+.main-header .navbar {
   max-width: 1250px;
   height: 100%;
   margin: 0 auto;
@@ -57,41 +57,41 @@ header .navbar {
   justify-content: space-between;
 }
 
-header .navbar .logo a {
+.main-header .navbar .logo a {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
 }
 
-header .navbar .logo i {
+.main-header .navbar .logo i {
   font-size: 24px;
   color: #fff;
   display: none;
 }
 
-header .navbar .navbar-links {
+.main-header .navbar .navbar-links {
   height: 100%;
   line-height: 70px;
 }
 
-header .navbar .navbar-links .links {
+.main-header .navbar .navbar-links .links {
   display: flex;
 }
 
-header .navbar .navbar-links .links li {
+.main-header .navbar .navbar-links .links li {
   position: relative;
   display: flex;
   align-items: center;
   padding: 0 14px;
 }
 
-header .navbar .navbar-links .links li a {
+.main-header .navbar .navbar-links .links li a {
   color: #fff;
   white-space: nowrap;
   height: 100%;
 }
 
-header .navbar .navbar-links .links li>i.fa-chevron-down {
+.main-header .navbar .navbar-links .links li>i.fa-chevron-down {
   height: 100%;
   line-height: 70px;
   width: 22px;
@@ -101,11 +101,11 @@ header .navbar .navbar-links .links li>i.fa-chevron-down {
   font-size: 12px;
 }
 
-header .navbar .navbar-links .links li:hover>i.fa-chevron-down {
+.main-header .navbar .navbar-links .links li:hover>i.fa-chevron-down {
   transform: rotate(-180deg);
 }
 
-header .navbar .navbar-links .links .sub-menu {
+.main-header .navbar .navbar-links .links .sub-menu {
   position: absolute;
   top: 70px;
   left: 0;
@@ -118,42 +118,42 @@ header .navbar .navbar-links .links .sub-menu {
   width: 100%;
 }
 
-header .navbar .navbar-links .links .sub-menu li {
+.main-header .navbar .navbar-links .links .sub-menu li {
   padding: 0 22px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-header .navbar .navbar-links .links .sub-menu li a {
+.main-header .navbar .navbar-links .links .sub-menu li a {
   font-weight: 500;
 }
 
-header .navbar .navbar-links .links li:hover>.sub-menu {
+.main-header .navbar .navbar-links .links li:hover>.sub-menu {
   display: block;
   padding: 0;
 }
 
-header .navbar .navbar-links .links .sub-menu li>i.fa-chevron-down {
+.main-header .navbar .navbar-links .links .sub-menu li>i.fa-chevron-down {
   font-size: 12px;
   transform: rotate(0);
   line-height: 40px;
 }
 
-header .navbar .navbar-links .links .sub-menu li:hover>i.fa-chevron-down {
+.main-header .navbar .navbar-links .links .sub-menu li:hover>i.fa-chevron-down {
   transform: rotate(-90deg);
 }
 
-header .navbar .navbar-links .links .sub-menu .more-sub-menu {
+.main-header .navbar .navbar-links .links .sub-menu .more-sub-menu {
   position: absolute;
   top: 0;
   left: 100%;
   display: none;
 }
 
-header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
+.main-header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
   display: block;
 }
 
-header .navbar .navbar-links .sidebar-logo {
+.main-header .navbar .navbar-links .sidebar-logo {
   display: none;
 }
 
@@ -210,20 +210,24 @@ header .navbar .navbar-links .sidebar-logo {
 }
 
 @media (max-width: 991px) {
-  header .navbar {
+  .main-header .navbar .navbar-links .links li:hover>.sub-menu {
+    padding: 0;
+  }
+
+  .main-header .navbar {
     width: 100%;
     padding: 0 30px;
   }
 
-  header .navbar .logo a {
+  .main-header .navbar .logo a {
     font-size: 22px;
   }
 
-  header .navbar .navbar-links .links li {
+  .main-header .navbar .navbar-links .links li {
     padding: 0 10px;
   }
 
-  header .navbar .navbar-links {
+  .main-header .navbar .navbar-links {
     display: block;
     position: fixed;
     top: 0;
@@ -236,49 +240,50 @@ header .navbar .navbar-links .sidebar-logo {
     transition: all 0.5s ease;
   }
 
-  header .navbar .logo a {
+  .main-header .navbar .logo a {
     display: none;
   }
 
-  header .navbar .logo i {
+  .main-header .navbar .logo i {
     display: block;
     cursor: pointer;
   }
 
-  header .navbar .navbar-links .sidebar-logo {
+  .main-header .navbar .navbar-links .sidebar-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  header .navbar .navbar-links .sidebar-logo a {
+  .main-header .navbar .navbar-links .sidebar-logo a {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
   }
 
-  header .navbar .navbar-links .sidebar-logo i {
+  .main-header .navbar .navbar-links .sidebar-logo i {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
     padding: 5px;
   }
 
-  header .navbar .navbar-links .links {
+  .main-header .navbar .navbar-links .links {
     display: block;
     margin-top: 20px;
+    padding: 0 !important;
   }
 
-  header .navbar .navbar-links .links li {
+  .main-header .navbar .navbar-links .links li {
     display: block;
     line-height: 40px;
   }
 
-  header .navbar .navbar-links .links li i.fa-chevron-down {
+  .main-header .navbar .navbar-links .links li i.fa-chevron-down {
     line-height: 40px;
   }
 
-  header .navbar .navbar-links .links .sub-menu {
+  .main-header .navbar .navbar-links .links .sub-menu {
     display: none;
     position: relative;
     top: 0;
@@ -286,71 +291,73 @@ header .navbar .navbar-links .sidebar-logo {
     box-shadow: none;
   }
 
-  header .navbar .navbar-links .links .sub-menu li {
+  .main-header .navbar .navbar-links .links .sub-menu li {
     border: none;
+    padding: 0;
   }
 
-  header .navbar .navbar-links .links .sub-menu li.more-submenu {
+  .main-header .navbar .navbar-links .links .sub-menu li.more-submenu {
     position: relative;
   }
 
-  header .navbar .navbar-links .links .sub-menu li.more-submenu .more-sub-menu {
+  .main-header .navbar .navbar-links .links .sub-menu li.more-submenu .more-sub-menu {
     display: none;
     position: relative;
     left: 0;
     top: 0;
   }
 
-  header .navbar .navbar-links .links li:hover .sub-menu {
+  .main-header .navbar .navbar-links .links li:hover .sub-menu {
     display: none;
   }
 
   /* 
-  header .navbar .navbar-links .links li:hover .sub-menu,
-  header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
+  .main-header .navbar .navbar-links .links li:hover .sub-menu,
+  .main-header .navbar .navbar-links .links .sub-menu .more-submenu:hover .more-sub-menu {
     display: none;
   } */
 
-  header .navbar .navbar-links .links li i.fa-chevron-down,
-  header .navbar .navbar-links .links li:hover i.fa-chevron-down {
+  .main-header .navbar .navbar-links .links li i.fa-chevron-down,
+  .main-header .navbar .navbar-links .links li:hover i.fa-chevron-down {
     transform: rotate(0deg);
   }
 
-  header .navbar .navbar-links .links .sub-menu li i.fa-chevron-down {
+  .main-header .navbar .navbar-links .links .sub-menu li i.fa-chevron-down {
     transform: rotate(-90deg);
   }
 
-  header .navbar .navbar-links .links li.active .sub-menu {
+  .main-header .navbar .navbar-links .links li.active .sub-menu {
+    padding: 0;
     display: block;
   }
 
-  header .navbar .navbar-links .links li.active>i {
+  .main-header .navbar .navbar-links .links li.active>i {
     transform: rotate(-180deg);
   }
 
-  header .navbar .navbar-links .links li.active:hover>i {
+  .main-header .navbar .navbar-links .links li.active:hover>i {
     transform: rotate(-180deg);
   }
 
-  header .navbar .navbar-links .links .sub-menu li .more-sub-menu {
+  .main-header .navbar .navbar-links .links .sub-menu li .more-sub-menu {
     display: none;
   }
 
-  header .navbar .navbar-links .links .sub-menu li i {
+  .main-header .navbar .navbar-links .links .sub-menu li i {
     transform: rotate(-90deg);
   }
 
-  header .navbar .navbar-links .links li.active .sub-menu li.show-menu .more-sub-menu {
+  .main-header .navbar .navbar-links .links li.active .sub-menu li.show-menu .more-sub-menu {
     display: block;
   }
 
-  header .navbar .navbar-links .links .sub-menu li.show-menu i.fa-chevron-down {
+  .main-header .navbar .navbar-links .links .sub-menu li.show-menu i.fa-chevron-down {
     transform: rotate(0deg);
   }
 }
 
 @media (max-width: 370px) {
-  header .navbar .navbar-links {
+  .main-header .navbar .navbar-links {
     max-width: 100%;
   }
 }
